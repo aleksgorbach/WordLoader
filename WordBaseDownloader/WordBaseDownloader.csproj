@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WordsBaseDownloader.App\WordsBaseDownloader.App.csproj" />
+    <ProjectReference Include="..\WordsBaseDownloader.Loaders.WordHelp\WordsBaseDownloader.Loaders.WordHelp.csproj" />
+  </ItemGroup>
+
 </Project>

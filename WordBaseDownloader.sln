@@ -5,6 +5,20 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordBaseDownloader", "WordBaseDownloader\WordBaseDownloader.csproj", "{220CDC8A-F726-40B9-BBC1-B04A53D65C89}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loaders", "Loaders", "{EAEAFEE5-B034-4982-AA17-2855053DC067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordBaseDownloader.Desktop", "WordBaseDownloader.Desktop\WordBaseDownloader.Desktop.csproj", "{864D14C8-9FA4-405E-9D16-934FD2FC7159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsBaseDownloader.Models", "WordsBaseDownloader.Models\WordsBaseDownloader.Models.csproj", "{19D78096-734E-471F-96E2-2403393CB20E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsBaseDownloader.Input", "WordsBaseDownloader.Input\WordsBaseDownloader.Input.csproj", "{DEE3FBAF-2857-42A0-8549-51C21BD93355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsBaseDownloader.App", "WordsBaseDownloader.App\WordsBaseDownloader.App.csproj", "{5E3919AB-9416-4C9E-80BB-163E132A0FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsBaseDownloader.Loaders.Interface", "WordsBaseDownloader.Loaders.Interface\WordsBaseDownloader.Loaders.Interface.csproj", "{8DB26CFE-50A9-4D1F-B086-25989AF15794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsBaseDownloader.Loaders.WordHelp", "WordsBaseDownloader.Loaders.WordHelp\WordsBaseDownloader.Loaders.WordHelp.csproj", "{CA62CD01-ACBB-4EC1-9B99-BBA789BD6EE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +29,37 @@ Global
 		{220CDC8A-F726-40B9-BBC1-B04A53D65C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{220CDC8A-F726-40B9-BBC1-B04A53D65C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{220CDC8A-F726-40B9-BBC1-B04A53D65C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864D14C8-9FA4-405E-9D16-934FD2FC7159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864D14C8-9FA4-405E-9D16-934FD2FC7159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864D14C8-9FA4-405E-9D16-934FD2FC7159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864D14C8-9FA4-405E-9D16-934FD2FC7159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D78096-734E-471F-96E2-2403393CB20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D78096-734E-471F-96E2-2403393CB20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D78096-734E-471F-96E2-2403393CB20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D78096-734E-471F-96E2-2403393CB20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE3FBAF-2857-42A0-8549-51C21BD93355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE3FBAF-2857-42A0-8549-51C21BD93355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE3FBAF-2857-42A0-8549-51C21BD93355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE3FBAF-2857-42A0-8549-51C21BD93355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3919AB-9416-4C9E-80BB-163E132A0FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3919AB-9416-4C9E-80BB-163E132A0FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3919AB-9416-4C9E-80BB-163E132A0FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3919AB-9416-4C9E-80BB-163E132A0FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB26CFE-50A9-4D1F-B086-25989AF15794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB26CFE-50A9-4D1F-B086-25989AF15794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB26CFE-50A9-4D1F-B086-25989AF15794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB26CFE-50A9-4D1F-B086-25989AF15794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA62CD01-ACBB-4EC1-9B99-BBA789BD6EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA62CD01-ACBB-4EC1-9B99-BBA789BD6EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA62CD01-ACBB-4EC1-9B99-BBA789BD6EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA62CD01-ACBB-4EC1-9B99-BBA789BD6EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DB26CFE-50A9-4D1F-B086-25989AF15794} = {EAEAFEE5-B034-4982-AA17-2855053DC067}
+		{CA62CD01-ACBB-4EC1-9B99-BBA789BD6EE3} = {EAEAFEE5-B034-4982-AA17-2855053DC067}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A3BC6684-F1B9-4E51-8AE2-1F6800FCB04E}

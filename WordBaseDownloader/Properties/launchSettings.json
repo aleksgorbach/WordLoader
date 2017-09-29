@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WordBaseDownloader": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\User\\Desktop\\words_input.txt"
+    }
+  }
+}
